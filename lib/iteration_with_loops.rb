@@ -7,7 +7,7 @@ def join_nested_strings(src)
   while row < src.count do
     column = 0
     while column < src[row].count do
-      if src[row][column] isa stringio
+      if src[row][column].is_a 
         final_string.join(src[row][column])
       end
       column += 1
