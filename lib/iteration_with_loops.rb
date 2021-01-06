@@ -8,11 +8,12 @@ def join_nested_strings(src)
     column = 0
     while column < src[row].count do
       if src[row][column].is_a? String
-        final_string.join(src[row][column])
+        final_string.push(src[row][column])
       end
       column += 1
     end
     row += 1
   end
+  final_string.join
   return final_string
 end
