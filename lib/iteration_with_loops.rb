@@ -6,6 +6,6 @@ def join_nested_strings(src)
   while row < src.count do
     column = 0
     while column < src[row].count do
-      src
+      
   
 end
